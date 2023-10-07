@@ -1,0 +1,80 @@
+.bg-color {
+	background-color: #c2ebff !important;
+}
+
+.bg-color-2 {
+	background-color: #e3f7ff !important;
+}
+
+.bg-primary-color {
+	background-color: #0e70ba !important;
+}
+
+.cancel-bg-color {
+	background-color: #ed1c24 !important;
+}
+
+.primary-color {
+	color: #0e70ba !important;
+}
+
+.secondary-color {
+	color: #24b6f2 !important;
+}
+
+.muted-color {
+	color: #818a91 !important;
+}
+
+.form-control::placeholder {
+	color: #bfbfbf;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+/* Custom style for radio buttons */
+.custom-control-input {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.custom-control-label::before {
+	content: "\f111";
+	font-family: "Font Awesome 5 Free";
+	font-size: 1.5em;
+	color: #007bff;
+	padding: 10px 20px;
+	border-radius: 50%;
+	align-self: center;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+	content: "\f058";
+	font-family: "Font Awesome 5 Free";
+	color: #007bff;
+}
+
+.copyright-symbol::before {
+	content: '\00a9';
+	font-family: 'Font Awesome 5 Free';
+	font-size: 1.2em;
+}
+
+.social-icon {
+	font-size: 1em;
+}
+
+.custom-button-group .btn {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+/* offcanvas custom css */
+.avatar {
+	min-height: 60px;
+	min-width: 60px;
+	max-height: 60px;
+	max-width: 60px;
+	background-size: cover;
+	background-position: center;
+}

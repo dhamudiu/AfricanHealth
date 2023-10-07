@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Account Type | African Health Innovation Hub</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+	<script src="https://kit.fontawesome.com/3c69f28b8f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+	<style>
+		.bg-color {
+			background-color: #c2ebff !important;
+		}
+
+		.bg-color-2 {
+			background-color: #e3f7ff !important;
+		}
+
+		.bg-primary-color {
+			background-color: #0e70ba !important;
+		}
+
+		.cancel-bg-color {
+			background-color: #ed1c24 !important;
+		}
+
+		.primary-color {
+			color: #0e70ba !important;
+		}
+
+		.secondary-color {
+			color: #24b6f2 !important;
+		}
+
+		.muted-color {
+			color: #818a91 !important;
+		}
+
+		.form-control::placeholder {
+			/* color: rgba(108, 117, 125, 0.5); */
+			color: #bfbfbf;
+			font-size: 15px;
+			font-weight: 500;
+		}
+
+		/* Custom style for radio buttons */
+		.custom-control-input {
+			position: absolute;
+			clip: rect(0, 0, 0, 0);
+		}
+
+		.custom-control-label::before {
+			content: "\f111";
+			font-family: "Font Awesome 5 Free";
+			font-size: 1.5em;
+			color: var(--bs-gray-500);
+			padding: 10px 20px;
+			align-self: center;
+		}
+
+		.custom-control-input:checked~.custom-control-label::before {
+			content: "\f058";
+			font-family: "Font Awesome 5 Free";
+			color: #007bff;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="bg-color container p-4 pt-5">
+		<a href="index.html"><img src="logo.png" alt="logo" class="d-block mx-auto w-75" /></a>
+
+		<h2 class="fw-bold mt-5 primary-color text-center"> Select one Account Type </h2>
+
+		<form action="dashboard.html">
+			<div>
+				<h5 class="fw-semibold mt-4 muted-color">Patients</h5>
+
+				<div class="custom-control custom-radio my-2">
+					<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+					<label class="bg-color-2 custom-control-label d-flex rounded-4" for="customRadio1">
+						<div class="border-2 border-opacity-50 border-secondary border-start p-2 small">
+							Private Patient Account (PPA) to hold one patient's details.
+						</div>
+					</label>
+				</div>
+
+				<div class="custom-control custom-radio my-2">
+					<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+					<label class="bg-color-2 custom-control-label d-flex rounded-4" for="customRadio2">
+						<div class="border-2 border-opacity-50 border-secondary border-start p-2 small">
+							Digital Health Account (DHA) to hold one or more patient's details.
+						</div>
+					</label>
+				</div>
+			</div>
+
+			<div>
+				<h5 class="fw-semibold mt-4 muted-color">Healthcare Professionals</h5>
+
+				<div class="custom-control custom-radio my-2">
+					<input type="radio" id="customRadio21" name="customRadio2" class="custom-control-input" checked>
+					<label class="bg-color-2 custom-control-label d-flex rounded-4" for="customRadio21">
+						<div class="border-2 border-opacity-50 border-secondary border-start p-2 small">
+							Private Family Doctor (PFD) working in own practice.
+						</div>
+					</label>
+				</div>
+
+				<div class="custom-control custom-radio my-2">
+					<input type="radio" id="customRadio22" name="customRadio2" class="custom-control-input">
+					<label class="bg-color-2 custom-control-label d-flex rounded-4" for="customRadio22">
+						<div class="border-2 border-opacity-50 border-secondary border-start p-2 small">
+							Specialist Medical Consultant (SMC) working in own practice.
+						</div>
+					</label>
+				</div>
+
+				<div class="custom-control custom-radio my-2">
+					<input type="radio" id="customRadio23" name="customRadio2" class="custom-control-input">
+					<label class="bg-color-2 custom-control-label d-flex rounded-4" for="customRadio23">
+						<div class="border-2 border-opacity-50 border-secondary border-start p-2 small">
+							Health Care Professional (HCP) working in a Public or Private Hospital.
+						</div>
+					</label>
+				</div>
+			</div>
+
+			<div class="d-flex gap-4 mt-5">
+				<button type="reset" onclick="window.location.href = 'index.html'"
+					class="cancel-bg-color text-white btn flex-fill fs-4 fw-bold my-2 rounded-5">
+					CANCEL
+				</button>
+			</div>
+		</form>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

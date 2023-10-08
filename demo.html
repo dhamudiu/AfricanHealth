@@ -9,18 +9,19 @@
 		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 	<script src="https://kit.fontawesome.com/3c69f28b8f.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-	<link rel="stylesheet" href="style.css">
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	
-    <!-- start -->
-    <!-- material ui cdn (icons) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <!-- end -->
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <script>
-		$( function () {
-			$( "header" ).load( "header.html" );
-		} );
+	<!-- start -->
+	<!-- material ui cdn (icons) -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<!-- end -->
+
+	<script>
+		$(function () {
+			$("header").load("header.html");
+		});
 	</script>
 </head>
 
@@ -32,55 +33,50 @@
 					aria-controls="offcanvasNavbar">
 					<i class="fa-solid fa-bars fa-2x" style="color: #0e70ba"></i>
 				</button>
-		
+
 				<div class="position-relative">
 					<i class="fa-solid fa-bell fa-2x" style="color: #0e70ba"></i>
-					<span class="badge bg-danger rounded-circle" style="
-				  position: absolute;
-				  right: -6px;
-				  padding: 2px 5px;
-				  border: 2px solid #c2ebff;
-				">4</span>
+					<span class="badge bg-danger rounded-circle"
+						style="position: absolute;right: -6px;padding: 2px 5px;border: 2px solid #c2ebff;">4</span>
 				</div>
-		
+
 				<a href="index.html">
 					<div class="border m-0 navbar-brand p rounded-circle"
 						style="padding: 15px 13px; border-color: #0e70ba !important">
 						<i class="fa-2x fa-solid fa-truck-medical" style="color: #0e70ba"></i>
 					</div>
 				</a>
-		
+
 				<div>
 					<i class="fa-brands fa-whatsapp fa-2x fa-solid" style="color: #0e70ba"></i>
 				</div>
 				<div>
 					<i class="fa-2x fa-solid fa-stethoscope" style="color: #0e70ba"></i>
 				</div>
-		
+
 				<form class="d-flex mt-3 mx-auto" role="search">
 					<div class="input-group my-3">
 						<input type="search" class="border-end-0 form-control ps-4 rounded-5 rounded-end"
 							placeholder="Search Patients" aria-label="Search" />
-		
+
 						<span class="bg-white input-group-text pe-4 rounded-5 rounded-start">
 							<i class="fa fa-search opacity-50 text-muted" aria-hidden="true"></i>
 						</span>
 					</div>
 				</form>
-		
+
 				<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
 					aria-labelledby="offcanvasNavbarLabel">
-		
 					<div class="offcanvas-close-btn text-end">
-						<i class="fa-2x fa-solid fa-xmark btn primary-color" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+						<i class="fa-2x fa-solid fa-xmark btn primary-color" data-bs-dismiss="offcanvas"
+							aria-label="Close"></i>
 					</div>
-		
+
 					<div class="align-items-center d-flex justify-content-between m-4 offcanvas-custom-header">
 						<div class="align-items-center d-flex">
 							<div class="avatar border border-primary me-3 rounded-circle"
-								style="background-image: url('profile.jpeg')">
-							</div>
-		
+								style="background-image: url('profile.jpeg')"></div>
+
 							<div>
 								<h5 class="fw-bold m-0">Jo Manata</h5>
 								<h6 class="m-0 primary-color">DHA</h6>
@@ -88,44 +84,10 @@
 						</div>
 						<i class="fa-chevron-right fa-solid"></i>
 					</div>
-		
-                    <!-- start -->
 
-                    <style>
-                        .menu_opt {
-                            cursor: pointer;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            align-items: center;
-                            padding: 20px 20px;
-                            text-transform: uppercase;
-                            font-weight: 700;
-                            color: #878787;
-                            border-radius: 8px;
-                        }
-                        .menu_opt:hover {
-                            color: #fff;
-                            background: #0E70BA;
-                        }
-                        .w-0 {
-                            width: 0px;
-                        }
-                        .menu_arrow_width {
-                            width: 15px;
-                        }
-                        .all_center {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                        .hr_css {
-                            width: 90%;
-                            margin: auto;
-                        }
-                    </style>
+					<!-- start -->
 
-					<hr class="hr_css">
+					<hr class="hr_css" />
 
 					<!-- <div class="offcanvas-body">
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -155,302 +117,295 @@
 						</ul>
 					</div> -->
 
+					<!-- <hr> -->
 
-                    <!-- <hr> -->
+					<div class="offcanvas-body">
+						<div class="menu_opt">
+							<span class="all_center">
+								<i class="material-icons w-0">local_printshop_rounded</i>
+							</span>
+							<span class="flex-grow-1 px-5">
+								<a class="nav-link active" aria-current="page" href="#">PRINT</a>
+							</span>
+						</div>
 
-                    <div class="offcanvas-body">
+						<div class="menu_opt">
+							<span class="all_center">
+								<i class="material-icons w-0">vaccines_rounded</i>
+							</span>
+							<span class="flex-grow-1 px-5">
+								<a class="nav-link active" aria-current="page" href="#">MEDICATIONS</a>
+							</span>
+						</div>
 
-                        <div class="menu_opt">
-                            <span class="all_center">
-                                <i class="material-icons w-0">local_printshop_rounded</i>
-                            </span>
-                            <span class="flex-grow-1 px-5">
-                                <a class="nav-link active" aria-current="page" href="#">PRINT</a>
-                            </span>
-                        </div>
+						<div class="menu_opt">
+							<span class="all_center">
+								<i class="material-icons w-0">edit_calendar_rounded</i>
+							</span>
+							<span class="flex-grow-1 px-5">
+								<a class="nav-link active" aria-current="page" href="#">APPOINTMENTS</a>
+							</span>
+						</div>
 
-                        <div class="menu_opt">
-                            <span class="all_center">
-                                <i class="material-icons w-0">vaccines_rounded</i>
-                            </span>
-                            <span class="flex-grow-1 px-5">
-                                <a class="nav-link active" aria-current="page" href="#">MEDICATIONS</a>
-                            </span>
-                        </div>
-                        
-                        <div class="menu_opt">
-                            <span class="all_center">
-                                <i class="material-icons w-0">edit_calendar_rounded</i>
-                            </span>
-                            <span class="flex-grow-1 px-5">
-                                <a class="nav-link active" aria-current="page" href="#">APPOINTMENTS</a>
-                            </span>
-                        </div>
+						<div class="menu_opt">
+							<span class="all_center">
+								<i class="material-icons w-0">domain_add_rounded</i>
+							</span>
+							<span class="flex-grow-1 px-5">
+								<a class="nav-link active" aria-current="page" href="#">ADMISSIONS</a>
+							</span>
+						</div>
 
-                        <div class="menu_opt">
-                            <span class="all_center">
-                                <i class="material-icons w-0">domain_add_rounded</i>
-                            </span>
-                            <span class="flex-grow-1 px-5">
-                                <a class="nav-link active" aria-current="page" href="#">ADMISSIONS</a>
-                            </span>
-                        </div>
+						<hr class="hr_css" />
 
-                    </div>
+						<div>
+							<div class="menu_opt" onclick="sub_menu(this)">
+								<span class="all_center">
+									<i class="material-icons w-0">medication_liquid_rounded</i>
+								</span>
+								<span class="flex-grow-1 px-5">
+									<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+								</span>
+								<span class="all_center">
+									<i class="material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
+								</span>
+							</div>
 
-                    <hr class="hr_css">
+							<div class="sub_menu">
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+							</div>
+						</div>
 
-                    <div class="offcanvas-body">
-                        <div>
-                            <div class="menu_opt" onclick="sub_menu(this)">
-                                <span class="all_center">
-                                    <i class="material-icons w-0">medication_liquid_rounded</i>
-                                </span>
-                                <span class="flex-grow-1 px-5">
-                                    <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                </span>
-                                <span class="all_center"> 
-                                    <i class=" material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
-                                </span>
-                            </div>  
-                            
-                            <div class="sub_menu">
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <div class="menu_opt" onclick="sub_menu(this)">
-                                <span class="all_center">
-                                    <i class="material-icons w-0">create_new_folder</i>
-                                </span>
-                                <span class="flex-grow-1 px-5">
-                                    <a class="nav-link active" aria-current="page" href="#">MANAGE HEALTH DATA</a>
-                                </span>
-                                <span class="all_center"> 
-                                    <i class=" material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
-                                </span>
-                            </div>
+						<div>
+							<div class="menu_opt" onclick="sub_menu(this)">
+								<span class="all_center">
+									<i class="material-icons w-0">create_new_folder</i>
+								</span>
+								<span class="flex-grow-1 px-5">
+									<a class="nav-link active" aria-current="page" href="#">MANAGE HEALTH DATA</a>
+								</span>
+								<span class="all_center">
+									<i class="material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
+								</span>
+							</div>
 
-                            <div class="sub_menu">
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <div class="menu_opt" onclick="sub_menu(this)">
-                                <span class="all_center">
-                                    <i class="material-icons w-0">note_add</i>
-                                </span>
-                                <span class="flex-grow-1 px-5">
-                                    <a class="nav-link active" aria-current="page" href="#">MANAGE MEDICAL DATA</a>
-                                </span>
-                                <span class="all_center"> 
-                                    <i class=" material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
-                                </span>
-                            </div>
-    
-                            <div class="sub_menu">
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+							<div class="sub_menu">
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+							</div>
+						</div>
 
-                        <div>
-                            <div class="menu_opt" onclick="sub_menu(this)">
-                                <span class="all_center">
-                                    <i class="material-icons w-0">add_moderator</i>
-                                </span>
-                                <span class="flex-grow-1 px-5">
-                                    <a class="nav-link active" aria-current="page" href="#">MANAGE SECURITY</a>
-                                </span>
-                                <span class="all_center"> 
-                                    <i class=" material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
-                                </span>
-                            </div>
-                            
-                            <div class="sub_menu">
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+						<div>
+							<div class="menu_opt" onclick="sub_menu(this)">
+								<span class="all_center">
+									<i class="material-icons w-0">note_add</i>
+								</span>
+								<span class="flex-grow-1 px-5">
+									<a class="nav-link active" aria-current="page" href="#">MANAGE MEDICAL DATA</a>
+								</span>
+								<span class="all_center">
+									<i class="material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
+								</span>
+							</div>
 
-                       <div>
-                            <div class="menu_opt" onclick="sub_menu(this)">
-                                <span class="all_center">
-                                    <i class="material-icons w-0">manage_accounts</i>
-                                </span>
-                                <span class="flex-grow-1 px-5">
-                                    <a class="nav-link active" aria-current="page" href="#">MANAGE ACCOUNT</a>
-                                </span>
-                                <span class="all_center"> 
-                                    <i class=" material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
-                                </span>
-                            </div>
+							<div class="sub_menu">
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+							</div>
+						</div>
 
-                            <div class="sub_menu">
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                            </div>
-                       </div>
+						<div>
+							<div class="menu_opt" onclick="sub_menu(this)">
+								<span class="all_center">
+									<i class="material-icons w-0">add_moderator</i>
+								</span>
+								<span class="flex-grow-1 px-5">
+									<a class="nav-link active" aria-current="page" href="#">MANAGE SECURITY</a>
+								</span>
+								<span class="all_center">
+									<i class="material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
+								</span>
+							</div>
 
-                        <div>
-                            <div class="menu_opt" onclick="sub_menu(this)">
-                                <span class="all_center">
-                                    <i class="material-icons w-0">add_to_queue</i>
-                                </span>
-                                <span class="flex-grow-1 px-5">
-                                    <a class="nav-link active" aria-current="page" href="#">MANAGE SYSTEM</a>
-                                </span>
-                                <span class="all_center"> 
-                                    <i class=" material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
-                                </span>
-                            </div>
-    
-                            <div class="sub_menu">
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                                <div class="menu_opt ms-5">
-                                    <span class="all_center">
-                                        <i class="material-icons w-0">medication_liquid_rounded</i>
-                                    </span>
-                                    <span class="flex-grow-1 px-5">
-                                        <a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+							<div class="sub_menu">
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+							</div>
+						</div>
 
-                    </div>
+						<div>
+							<div class="menu_opt" onclick="sub_menu(this)">
+								<span class="all_center">
+									<i class="material-icons w-0">manage_accounts</i>
+								</span>
+								<span class="flex-grow-1 px-5">
+									<a class="nav-link active" aria-current="page" href="#">MANAGE ACCOUNT</a>
+								</span>
+								<span class="all_center">
+									<i class="material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
+								</span>
+							</div>
 
-                    <!-- end -->
+							<div class="sub_menu">
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+							</div>
+						</div>
 
+						<div>
+							<div class="menu_opt" onclick="sub_menu(this)">
+								<span class="all_center">
+									<i class="material-icons w-0">add_to_queue</i>
+								</span>
+								<span class="flex-grow-1 px-5">
+									<a class="nav-link active" aria-current="page" href="#">MANAGE SYSTEM</a>
+								</span>
+								<span class="all_center">
+									<i class="material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
+								</span>
+							</div>
+
+							<div class="sub_menu">
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+								<div class="menu_opt ms-5">
+									<span class="all_center">
+										<i class="material-icons w-0">medication_liquid_rounded</i>
+									</span>
+									<span class="flex-grow-1 px-5">
+										<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- end -->
 				</div>
 			</div>
 		</nav>
@@ -460,31 +415,41 @@
 		<div class="bg-color-2 px-4 py-3 rounded-4">
 			<div class="align-items-center d-flex gap-3">
 				<div class="border border-primary rounded-circle"
-					style="min-width: 60px;min-height: 60px;background-image: url('profile.jpeg');background-size: cover;background-position: center;">
+					style=" min-width: 60px; min-height: 60px; background-image: url('profile.jpeg'); background-size: cover; background-position: center; ">
 				</div>
 				<div>
 					<div class="fw-bold primary-color">MRS STOMACK ACHE</div>
-					<div class="muted-color small">Male - 45, Nigeria 20 Sept 2023 3pm</div>
+					<div class="muted-color small">
+						Male - 45, Nigeria 20 Sept 2023 3pm
+					</div>
 				</div>
 			</div>
 
 			<div>
 				<div class="my-2 small">
-					Feeling very unwell due to inhaling smoke frome my wife’s coking been coughing and seeing
-					blood.....MORE
+					Feeling very unwell due to inhaling smoke frome my wife’s coking
+					been coughing and seeing blood.....MORE
 				</div>
 			</div>
 
 			<div class="d-flex gap-3 custom-button-group">
 				<div class="d-flex flex-column flex-fill gap-2">
 					<button class="btn btn-danger btn-sm rounded-5">CASE OPEN</button>
-					<button class="btn btn-primary btn-sm rounded-5">VIEW COMMENTERS</button>
-					<button class="btn btn-primary btn-sm rounded-5">VIEW IMAGES</button>
+					<button class="btn btn-primary btn-sm rounded-5">
+						VIEW COMMENTERS
+					</button>
+					<button class="btn btn-primary btn-sm rounded-5">
+						VIEW IMAGES
+					</button>
 				</div>
 				<div class="d-flex flex-column flex-fill gap-2">
 					<button class="btn btn-danger btn-sm rounded-5">SYMPTOMS ON</button>
-					<button class="btn btn-primary btn-sm rounded-5">VIEW 12 COMMENTS</button>
-					<button class="btn btn-primary btn-sm rounded-5">ADD COMMENTS</button>
+					<button class="btn btn-primary btn-sm rounded-5">
+						VIEW 12 COMMENTS
+					</button>
+					<button class="btn btn-primary btn-sm rounded-5">
+						ADD COMMENTS
+					</button>
 				</div>
 			</div>
 		</div>
@@ -492,31 +457,41 @@
 		<div class="bg-color-2 px-4 py-3 rounded-4">
 			<div class="align-items-center d-flex gap-3">
 				<div class="border border-primary rounded-circle"
-					style="min-width: 60px;min-height: 60px;background-image: url('profile.jpeg');background-size: cover;background-position: center;">
+					style="min-width: 60px; min-height: 60px; background-image: url('profile.jpeg'); background-size: cover; background-position: center; ">
 				</div>
 				<div>
 					<div class="fw-bold primary-color">MR HEAD ACHE</div>
-					<div class="muted-color small">Female - 50, Uganda 20 Sept 2023 3pm</div>
+					<div class="muted-color small">
+						Female - 50, Uganda 20 Sept 2023 3pm
+					</div>
 				</div>
 			</div>
 
 			<div>
 				<div class="my-2 small">
-					Feeling very unwell due to inhaling smoke frome my wife’s coking been coughing and seeing
-					blood.....MORE
+					Feeling very unwell due to inhaling smoke frome my wife’s coking
+					been coughing and seeing blood.....MORE
 				</div>
 			</div>
 
 			<div class="d-flex gap-3 custom-button-group">
 				<div class="d-flex flex-column flex-fill gap-2">
 					<button class="btn btn-danger btn-sm rounded-5">CASE OPEN</button>
-					<button class="btn btn-primary btn-sm rounded-5">VIEW COMMENTERS</button>
-					<button class="btn btn-primary btn-sm rounded-5">VIEW IMAGES</button>
+					<button class="btn btn-primary btn-sm rounded-5">
+						VIEW COMMENTERS
+					</button>
+					<button class="btn btn-primary btn-sm rounded-5">
+						VIEW IMAGES
+					</button>
 				</div>
 				<div class="d-flex flex-column flex-fill gap-2">
 					<button class="btn btn-danger btn-sm rounded-5">SYMPTOMS ON</button>
-					<button class="btn btn-primary btn-sm rounded-5">VIEW 12 COMMENTS</button>
-					<button class="btn btn-primary btn-sm rounded-5">ADD COMMENTS</button>
+					<button class="btn btn-primary btn-sm rounded-5">
+						VIEW 12 COMMENTS
+					</button>
+					<button class="btn btn-primary btn-sm rounded-5">
+						ADD COMMENTS
+					</button>
 				</div>
 			</div>
 		</div>
@@ -524,41 +499,51 @@
 		<div class="bg-color-2 px-4 py-3 rounded-4">
 			<div class="align-items-center d-flex gap-3">
 				<div class="border border-primary rounded-circle"
-					style="min-width: 60px;min-height: 60px;background-image: url('profile.jpeg');background-size: cover;background-position: center;">
+					style="min-width: 60px; min-height: 60px; background-image: url('profile.jpeg'); background-size: cover; background-position: center; ">
 				</div>
 				<div>
 					<div class="fw-bold primary-color">MR HEAD ACHE</div>
-					<div class="muted-color small">Female - 50, Uganda 20 Sept 2023 3pm</div>
+					<div class="muted-color small">
+						Female - 50, Uganda 20 Sept 2023 3pm
+					</div>
 				</div>
 			</div>
 
 			<div>
 				<div class="my-2 small">
-					Feeling very unwell due to inhaling smoke frome my wife’s coking been coughing and seeing
-					blood.....MORE
+					Feeling very unwell due to inhaling smoke frome my wife’s coking
+					been coughing and seeing blood.....MORE
 				</div>
 			</div>
 
 			<div class="d-flex gap-3 custom-button-group">
 				<div class="d-flex flex-column flex-fill gap-2">
 					<button class="btn btn-danger btn-sm rounded-5">CASE OPEN</button>
-					<button class="btn btn-primary btn-sm rounded-5">VIEW COMMENTERS</button>
-					<button class="btn btn-primary btn-sm rounded-5">VIEW IMAGES</button>
+					<button class="btn btn-primary btn-sm rounded-5">
+						VIEW COMMENTERS
+					</button>
+					<button class="btn btn-primary btn-sm rounded-5">
+						VIEW IMAGES
+					</button>
 				</div>
 				<div class="d-flex flex-column flex-fill gap-2">
 					<button class="btn btn-danger btn-sm rounded-5">SYMPTOMS ON</button>
-					<button class="btn btn-primary btn-sm rounded-5">VIEW 12 COMMENTS</button>
-					<button class="btn btn-primary btn-sm rounded-5">ADD COMMENTS</button>
+					<button class="btn btn-primary btn-sm rounded-5">
+						VIEW 12 COMMENTS
+					</button>
+					<button class="btn btn-primary btn-sm rounded-5">
+						ADD COMMENTS
+					</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="align-items-center d-flex flex-wrap justify-content-center mb-3 mt-5" style="font-size: 14px;">
+	<div class="align-items-center d-flex flex-wrap justify-content-center mb-3 mt-5" style="font-size: 14px">
 		<span class="copyright-symbol"></span>
 		<span class="mx-1">2023</span>
-		<a href="africanHealth.ai" class="text-decoration-none">AfricanHealth.ai</a> &nbsp; <span>All rights
-			reserved.</span>
+		<a href="africanHealth.ai" class="text-decoration-none">AfricanHealth.ai</a>
+		&nbsp; <span>All rights reserved.</span>
 		<div class="d-flex gap-2 mx-2">
 			<a href="#" class="social-icon"><i class="fab fa-youtube" aria-hidden="true"></i></a>
 			<a href="#" class="social-icon"><i class="fab fa-facebook" aria-hidden="true"></i></a>
@@ -571,15 +556,14 @@
 		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
 		crossorigin="anonymous"></script>
 
-        <!-- start -->
-        <script>
-            $('.sub_menu').toggle();
-            function sub_menu(e)
-            {
-                $(e).next('.sub_menu').toggle('fade-in');
-            }
-        </script>
-        <!-- end -->
+	<!-- start -->
+	<script>
+		$(".sub_menu").toggle();
+		function sub_menu(e) {
+			$(e).next(".sub_menu").toggle("fade-in");
+		}
+	</script>
+	<!-- end -->
 </body>
 
 </html>

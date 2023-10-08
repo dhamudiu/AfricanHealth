@@ -78,3 +78,41 @@
 	background-size: cover;
 	background-position: center;
 }
+
+/* header & sidebar flyover menu custom css */
+.menu_opt {
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #878787;
+	border-radius: 8px;
+}
+
+.menu_opt:hover {
+	color: #fff;
+	background: #0e70ba;
+}
+
+.w-0 {
+	width: 0px;
+}
+
+.menu_arrow_width {
+	width: 15px;
+}
+
+.all_center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hr_css {
+	width: 90%;
+	margin: auto;
+}

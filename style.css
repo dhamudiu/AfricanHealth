@@ -78,3 +78,23 @@
 	background-size: cover;
 	background-position: center;
 }
+
+.datepicker.datepicker-dropdown.dropdown-menu {
+	z-index: 1021 !important;
+}
+
+/* give down arrow at tip of input field */
+
+.select-down-arrow::after {
+	content: '';
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	position: absolute;
+	top: calc(50% - 4px);
+	right: 17px;
+	transform: rotate(45deg);
+	border-style: solid;
+	border-color: #000;
+	border-width: 0px 1px 1px 0px;
+}

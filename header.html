@@ -1,4 +1,4 @@
-<nav class="bg-color navbar sticky-top" style="border-radius: 0px 0px 50px 50px">
+<nav class="bg-color navbar" style="border-radius: 0px 0px 50px 50px">
 	<div class="container-fluid">
 		<button class="border-0 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
 			aria-controls="offcanvasNavbar">
@@ -7,12 +7,8 @@
 
 		<div class="position-relative">
 			<i class="fa-solid fa-bell fa-2x" style="color: #0e70ba"></i>
-			<span class="badge bg-danger rounded-circle" style="
-          position: absolute;
-          right: -6px;
-          padding: 2px 5px;
-          border: 2px solid #c2ebff;
-        ">4</span>
+			<span class="badge bg-danger rounded-circle"
+				style="position: absolute;right: -6px;padding: 2px 5px;border: 2px solid #c2ebff;">4</span>
 		</div>
 
 		<a href="index.html">
@@ -42,7 +38,6 @@
 
 		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
 			aria-labelledby="offcanvasNavbarLabel">
-
 			<div class="offcanvas-close-btn text-end">
 				<i class="fa-2x fa-solid fa-xmark btn primary-color" data-bs-dismiss="offcanvas" aria-label="Close"></i>
 			</div>
@@ -50,8 +45,7 @@
 			<div class="align-items-center d-flex justify-content-between m-4 offcanvas-custom-header">
 				<div class="align-items-center d-flex">
 					<div class="avatar border border-primary me-3 rounded-circle"
-						style="background-image: url('profile.jpeg')">
-					</div>
+						style="background-image: url('profile.jpeg')"></div>
 
 					<div>
 						<h5 class="fw-bold m-0">Jo Manata</h5>
@@ -61,35 +55,311 @@
 				<i class="fa-chevron-right fa-solid"></i>
 			</div>
 
-			<hr>
+			<!-- start -->
 
-			<div class="offcanvas-body">
-				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-					<li class="nav-item">
+			<hr class="hr_css" />
+
+			<div class="offcanvas-body" style="overflow-x: hidden;">
+				<div class="menu_opt">
+					<span class="all_center">
+						<img src="Menu Icons/Artboard 150.png" alt="print">
+					</span>
+					<span class="flex-grow-1 px-4">
+						<a class="nav-link active" aria-current="page" href="#">PRINT</a>
+					</span>
+				</div>
+
+				<div class="menu_opt">
+					<span class="all_center">
+						<img src="Menu Icons/Artboard 250.png" alt="medications">
+					</span>
+					<span class="flex-grow-1 px-4">
 						<a class="nav-link active" aria-current="page" href="#">MEDICATIONS</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">APPOINTMENTS</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">ADMISSIONS</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-							aria-expanded="false">
-							Dropdown
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
-							<li>
-								<hr class="dropdown-divider" />
-							</li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
-						</ul>
-					</li>
-				</ul>
+					</span>
+				</div>
+
+				<div class="menu_opt">
+					<span class="all_center">
+						<img src="Menu Icons/Artboard 350.png" alt="appointments">
+					</span>
+					<span class="flex-grow-1 px-4">
+						<a class="nav-link active" aria-current="page" href="#">APPOINTMENTS</a>
+					</span>
+				</div>
+
+				<div class="menu_opt">
+					<span class="all_center">
+						<img src="Menu Icons/Artboard 450.png" alt="admissions">
+					</span>
+					<span class="flex-grow-1 px-4">
+						<a class="nav-link active" aria-current="page" href="#">ADMISSIONS</a>
+					</span>
+				</div>
+
+				<hr class="hr_css" />
+
+				<div>
+					<div class="menu_opt" onclick="sub_menu(this)">
+						<span class="all_center">
+							<img src="Menu Icons/Artboard 550.png" alt="print">
+						</span>
+						<span class="flex-grow-1 px-4">
+							<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+						</span>
+						<span class="all_center">
+							<i class="material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
+						</span>
+					</div>
+
+					<div class="sub_menu">
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 550.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+							</span>
+						</div>
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 550.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+							</span>
+						</div>
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 550.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE PATIENTS</a>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="menu_opt" onclick="sub_menu(this)">
+						<span class="all_center">
+							<img src="Menu Icons/Artboard 650.png" alt="print">
+						</span>
+						<span class="flex-grow-1 px-4">
+							<a class="nav-link active" aria-current="page" href="#">MANAGE HEALTH DATA</a>
+						</span>
+						<span class="all_center">
+							<i class="material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
+						</span>
+					</div>
+
+					<div class="sub_menu">
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 650.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE HEALTH DATA</a>
+							</span>
+						</div>
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 650.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE HEALTH DATA</a>
+							</span>
+						</div>
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 650.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE HEALTH DATA</a>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="menu_opt" onclick="sub_menu(this)">
+						<span class="all_center">
+							<img src="Menu Icons/Artboard 750.png" alt="print">
+						</span>
+						<span class="flex-grow-1 px-4">
+							<a class="nav-link active" aria-current="page" href="#">MANAGE MEDICAL DATA</a>
+						</span>
+						<span class="all_center">
+							<i class="material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
+						</span>
+					</div>
+
+					<div class="sub_menu">
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 750.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE MEDICAL DATA</a>
+							</span>
+						</div>
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 750.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE MEDICAL DATA</a>
+							</span>
+						</div>
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 750.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE MEDICAL DATA</a>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="menu_opt" onclick="sub_menu(this)">
+						<span class="all_center">
+							<img src="Menu Icons/Artboard 850.png" alt="print">
+						</span>
+						<span class="flex-grow-1 px-4">
+							<a class="nav-link active" aria-current="page" href="#">MANAGE SECURITY</a>
+						</span>
+						<span class="all_center">
+							<i class="material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
+						</span>
+					</div>
+
+					<div class="sub_menu">
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 850.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE SECURITY</a>
+							</span>
+						</div>
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 850.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE SECURITY</a>
+							</span>
+						</div>
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 850.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE SECURITY</a>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="menu_opt" onclick="sub_menu(this)">
+						<span class="all_center">
+							<img src="Menu Icons/Artboard 950.png" alt="print">
+						</span>
+						<span class="flex-grow-1 px-4">
+							<a class="nav-link active" aria-current="page" href="#">MANAGE ACCOUNT</a>
+						</span>
+						<span class="all_center">
+							<i class="material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
+						</span>
+					</div>
+
+					<div class="sub_menu">
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 950.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE ACCOUNT</a>
+							</span>
+						</div>
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 950.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE ACCOUNT</a>
+							</span>
+						</div>
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 950.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE ACCOUNT</a>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="menu_opt" onclick="sub_menu(this)">
+						<span class="all_center">
+							<img src="Menu Icons/Artboard 1050.png" alt="print">
+						</span>
+						<span class="flex-grow-1 px-4">
+							<a class="nav-link active" aria-current="page" href="#">MANAGE SYSTEM</a>
+						</span>
+						<span class="all_center">
+							<i class="material-icons menu_arrow_width">keyboard_arrow_down_rounded</i>
+						</span>
+					</div>
+
+					<div class="sub_menu">
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 1050.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE SYSTEM</a>
+							</span>
+						</div>
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 1050.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE SYSTEM</a>
+							</span>
+						</div>
+						<div class="menu_opt ms-5">
+							<span class="all_center">
+								<img src="Menu Icons/Artboard 1050.png" alt="print">
+							</span>
+							<span class="flex-grow-1 px-4">
+								<a class="nav-link active" aria-current="page" href="#">MANAGE SYSTEM</a>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<hr class="hr_css" />
+
+				<button class="bg-primary-color btn fs-4 fw-bold my-4 rounded-5 text-white w-100">
+					<img src="Menu Icons/Artboard 2550.png" alt="print" style="width: 30px;" class="me-2">
+					LOGOUT
+				</button>
 			</div>
+
+			<!-- end -->
 		</div>
 	</div>
 </nav>
+
+<script>
+	$(".sub_menu").toggle();
+	function sub_menu(e) {
+		$(e).next(".sub_menu").toggle("fade-in");
+	}
+</script>

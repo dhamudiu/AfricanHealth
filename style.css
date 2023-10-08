@@ -116,3 +116,7 @@
 	width: 90%;
 	margin: auto;
 }
+
+.offcanvas-body img {
+	width: 35px;
+}

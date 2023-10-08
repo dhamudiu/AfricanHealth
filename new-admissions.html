@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>New Admissions | African Health Innovation Hub</title>
+	<!-- Bootsrap & Bootstrap Datepicker CSS via CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+	<!-- Font Awsome JS & CSS via CDN -->
+	<script src="https://kit.fontawesome.com/3c69f28b8f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<!-- jQuery JS via CDN -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Include header -->
+	<script>
+		$(function () {
+			$("header").load("header.html");
+		});
+	</script>
+</head>
+
+<body>
+	<header class="sticky-top">
+		<nav class="bg-color navbar" style="border-radius: 0px 0px 50px 50px">
+			<div class="container-fluid">
+				<button class="border-0 navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+					aria-controls="offcanvasNavbar">
+					<i class="fa-solid fa-bars fa-2x" style="color: #0e70ba"></i>
+				</button>
+
+				<div class="position-relative">
+					<i class="fa-solid fa-bell fa-2x" style="color: #0e70ba"></i>
+					<span class="badge bg-danger rounded-circle" style="
+				  position: absolute;
+				  right: -6px;
+				  padding: 2px 5px;
+				  border: 2px solid #c2ebff;
+				">4</span>
+				</div>
+
+				<a href="index.html">
+					<div class="border m-0 navbar-brand p rounded-circle"
+						style="padding: 15px 13px; border-color: #0e70ba !important">
+						<i class="fa-2x fa-solid fa-truck-medical" style="color: #0e70ba"></i>
+					</div>
+				</a>
+
+				<div>
+					<i class="fa-brands fa-whatsapp fa-2x fa-solid" style="color: #0e70ba"></i>
+				</div>
+				<div>
+					<i class="fa-2x fa-solid fa-stethoscope" style="color: #0e70ba"></i>
+				</div>
+
+				<form class="d-flex mt-3 mx-auto" role="search">
+					<div class="input-group my-3">
+						<input type="search" class="border-end-0 form-control ps-4 rounded-5 rounded-end"
+							placeholder="Search Patients" aria-label="Search" />
+
+						<span class="bg-white input-group-text pe-4 rounded-5 rounded-start">
+							<i class="fa fa-search opacity-50 text-muted" aria-hidden="true"></i>
+						</span>
+					</div>
+				</form>
+
+				<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel">
+
+					<div class="offcanvas-close-btn text-end">
+						<i class="fa-2x fa-solid fa-xmark btn primary-color" data-bs-dismiss="offcanvas"
+							aria-label="Close"></i>
+					</div>
+
+					<div class="align-items-center d-flex justify-content-between m-4 offcanvas-custom-header">
+						<div class="align-items-center d-flex">
+							<div class="avatar border border-primary me-3 rounded-circle"
+								style="background-image: url('profile.jpeg')">
+							</div>
+
+							<div>
+								<h5 class="fw-bold m-0">Jo Manata</h5>
+								<h6 class="m-0 primary-color">DHA</h6>
+							</div>
+						</div>
+						<i class="fa-chevron-right fa-solid"></i>
+					</div>
+
+					<hr>
+
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">MEDICATIONS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">APPOINTMENTS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">ADMISSIONS</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									Dropdown
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li>
+										<hr class="dropdown-divider" />
+									</li>
+									<li><a class="dropdown-item" href="#">Something else here</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<h6 class="fw-bold my-4 primary-color text-center">NEW ADMISSION FOR MRS BOLAJE</h6>
+
+	<form action="" class="px-4">
+		<div class="form-floating mt-3">
+			<select class="bg-color-2 form-select px-4 rounded-5" id="careRequest">
+				<option selected="">SELECT</option>
+			</select>
+			<label for="careRequest" class="opacity-50 ps-4 text-muted">CAREREQUEST</label>
+		</div>
+
+		<div class="form-floating mt-3">
+			<input type="text" class="bg-color-2 form-control ps-4 rounded-5" id="careProviderType"
+				placeholder="CARE PROVIDER TYPE">
+			<label for="careProviderType" class="opacity-50 ps-4 text-muted">CARE PROVIDER TYPE</label>
+		</div>
+
+		<div class="form-floating mt-3">
+			<input type="text" class="bg-color-2 form-control ps-4 rounded-5" id="name"
+				placeholder="NAME">
+			<label for="name" class="opacity-50 ps-4 text-muted">NAME</label>
+		</div>
+
+		<div class="form-floating mt-3 select-down-arrow">
+			<input type="text" class="bg-color-2 datepicker form-control ps-4 rounded-5" id="dateAdmitted" placeholder="DATE ADMITTED">
+			<label for="dateAdmitted" class="opacity-50 ps-4 text-muted">DATE ADMITTED</label>
+		</div>
+
+		<div class="form-floating mt-3">
+			<input type="text" class="bg-color-2 form-control ps-4 rounded-5" id="ward"
+				placeholder="WARD">
+			<label for="ward" class="opacity-50 ps-4 text-muted">WARD</label>
+		</div>
+
+		<div class="form-floating mt-3">
+			<select class="bg-color-2 form-select px-4 rounded-5" id="admissionType">
+				<option selected="">SELECT</option>
+				<option>IN-PATIENT</option>
+				<option>OUT-PATIENT</option>
+			</select>
+			<label for="admissionType" class="opacity-50 ps-4 text-muted">ADMISSION TYPE</label>
+		</div>
+
+		<div class="form-floating mt-3">
+			<input type="text" class="bg-color-2 form-control ps-4 rounded-5" id="notes"
+				placeholder="NOTES">
+			<label for="notes" class="opacity-50 ps-4 text-muted">NOTES</label>
+		</div>
+
+		<div class="form-floating mt-3 select-down-arrow">
+			<input type="text" class="bg-color-2 datepicker form-control ps-4 rounded-5" id="dateDischarged" placeholder="DATE DISCHARGED">
+			<label for="dateDischarged" class="opacity-50 ps-4 text-muted">DATE DISCHARGED</label>
+		</div>
+
+		<div class="form-floating mt-3">
+			<input type="number" class="bg-color-2 form-control ps-4 rounded-5" id="cost"
+				placeholder="COST">
+			<label for="cost" class="opacity-50 ps-4 text-muted">COST</label>
+		</div>
+
+		<div class="form-floating mt-3">
+			<input type="text" class="bg-color-2 form-control ps-4 rounded-5" id="rating"
+				placeholder="RATING">
+			<label for="rating" class="opacity-50 ps-4 text-muted">RATING</label>
+		</div>
+
+		<div class="form-floating mt-3">
+			<input type="text" class="bg-color-2 form-control ps-4 rounded-5" id="comments"
+				placeholder="COMMENTS">
+			<label for="comments" class="opacity-50 ps-4 text-muted">COMMENTS</label>
+		</div>
+	</form>
+
+	<div class="d-flex gap-4 p-4">
+		<button type="submit" class="bg-primary-color btn fs-4 fw-bold my-2 rounded-5 text-white w-50">SAVE</button>
+		<button type="reset" class="btn cancel-bg-color fs-4 fw-bold my-2 rounded-5 text-white w-50">CANCEL</button>
+	</div>
+
+	<div class="align-items-center d-flex flex-wrap justify-content-center mb-3 mt-5" style="font-size: 14px;">
+		<span class="copyright-symbol"></span>
+		<span class="mx-1">2023</span>
+		<a href="africanHealth.ai" class="text-decoration-none">AfricanHealth.ai</a> &nbsp; <span>All rights
+			reserved.</span>
+		<div class="d-flex gap-2 mx-2">
+			<a href="#" class="social-icon"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+			<a href="#" class="social-icon"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+			<a href="#" class="social-icon"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+			<a href="#" class="social-icon"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS via CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+	<!-- Popper.js via CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Bootstrap Datepicker JS via CDN -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	<script>
+		// Initialize Bootstrap Datepicker
+		$(document).ready(function () {
+			$('.datepicker').datepicker({
+				format: 'mm/dd/yyyy', // Date format
+				autoclose: true,      // Close the datepicker when a date is selected
+				todayHighlight: true   // Highlight today's date
+			});
+		});
+	</script>
+</body>
+
+</html>
